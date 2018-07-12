@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>破盤價大公開 超便宜數位商品 ∣ 全國電子學長幫你</title>
+	<link rel="stylesheet" href="./css/index.css">
+	<script src="./js/jquery-3.1.1.min.js"></script>
+	<script src="./js/vue.min.js"></script>
+</head>
+<body>
+	<div id="app">
+		<header></header>
+		<div class="container">
+			<div class="box-items">
+				<div class="item-wrap" v-for="(item,index) in item_data.page2" :key="item">
+					<div class="item">
+						<img :src=`./images/items/${item.sku}.jpg` alt="">
+						<div class="item-body">
+							<div class="title">{{item.title}}</div>
+							<div class="type">{{item.type}}</div>
+							<div class="origin_price-box">市價: <span class="origin_price">{{item.origin_price}}</span></div>
+							<div class="price-box">破盤價: <span class="price">{{item.price}}</span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="pagnation-wrap">
+			<div class="pagnation-box">
+				<a class="pagnation-link disabled" href="javascript:;">上一頁</a>
+				<a class="pagnation-link disabled" href="index.html">1</a>
+				<a class="pagnation-link" href="index2.html">2</a>
+				<a class="pagnation-link" href="index3.html">3</a>
+				<a class="pagnation-link" href="index2.html">下一頁</a>
+			</div>
+		</div>
+		<footer>全國電子股份有限公司 Copyright © elifemall.com.tw All rights reserved.</footer>
+	</div>
+	<script>
+	var vm=new Vue({
+		el:'#app',
+		mounted(){
+			console.log(Object.keys(this.item_data).length)
+		},
+		data:{
+			item_data:{
+				page1:[
+					{
+						logo:"ASUS",
+						image:"./images/items/",
+						title:"i5 窄邊框輕薄筆電",
+						type:"S410UA-0071B8250U",
+						sku:"2097544",
+						origin_price:25900,
+						price:22490
+					},{
+						logo:"acer",
+						image:"./images/items/",
+						title:"Swift 5輕薄筆電",
+						type:"SF514-51/79JE",
+						sku:"2093210",
+						origin_price:36900,
+						price:28900
+					},{
+						logo:"ASUS",
+						image:"./images/items/",
+						title:"狂潮i7電競筆電",
+						type:"FX503",
+						sku:"2095903",
+						origin_price:39900,
+						price:29900
+					},{
+						logo:"msi",
+						image:"./images/items/",
+						title:"PL62 i7玩家SSD輕薄筆電",
+						type:"PL627RC-231TW",
+						sku:"2095557",
+						origin_price:35900,
+						price:28900
+					},{
+						logo:"acer",
+						image:"./images/items/",
+						title:"Aspire7 i7 GTX電競筆電",
+						type:"A715-715Z",
+						sku:"2094644",
+						origin_price:31900,
+						price:27900
+					},{
+						logo:"ASUS",
+						image:"./images/items/",
+						title:"i7 4G獨顯筆電",
+						type:"X542UN-0131C855",
+						sku:"2096798",
+						origin_price:32900,
+						price:28490
+					},{
+						logo:"hp",
+						image:"./images/items/",
+						title:"8代i5美型效能2G獨筆電",
+						type:"15-BS116TX/2WX8",
+						sku:"2096209",
+						origin_price:23900,
+						price:21490
+					},{
+						logo:"acer",
+						image:"./images/items/",
+						title:"8代i5 2G獨顯混碟筆電",
+						type:"A515-51G-55T5",
+						sku:"2096467",
+						origin_price:31900,
+						price:24490
+					},{
+						logo:"Lenovo",
+						image:"./images/items/",
+						title:"320 i5 獨顯混碟筆電",
+						type:"320/81BG00KBTW",
+						sku:"2095978",
+						origin_price:24990,
+						price:21990
+					},{
+						logo:"ASUS",
+						image:"./images/items/",
+						title:"獨顯文書筆電",
+						type:"X541",
+						sku:"2096566",
+						origin_price:15900,
+						price:14490
+					},{
+						logo:"acer",
+						image:"./images/items/",
+						title:"四核心雙碟版 筆電",
+						type:"A314-31-C3LV",
+						sku:"2096385",
+						origin_price:16900,
+						price:14490
+					},{
+						logo:"acer",
+						image:"./images/items/",
+						title:"ONE 10平板筆電",
+						type:"S1003",
+						sku:"2089756",
+						origin_price:7990,
+						price:6490
+					}
+				],
+				page2:[
+					{
+						logo:"ASUS",
+						image:"./images/items/",
+						title:"i5 電競桌電",
+						type:"M80CJ-0011A73HG",
+						sku:"2092704",
+						origin_price:28900,
+						price:26900
+					},{
+						logo:"msi",
+						image:"./images/items/",
+						title:"闇夜之刃電競桌電",
+						type:"MI38RA-026TW",
+						sku:"2098057",
+						origin_price:33900,
+						price:29900
+					},{
+						logo:"ASUS",
+						image:"./images/items/",
+						title:"i5 2G獨顯桌機",
+						type:"K31CD-K-0081A74",
+						sku:"2097310",
+						origin_price:20900,
+						price:17900
+					},{
+						logo:"acer",
+						image:"./images/items/",
+						title:"i5獨顯混碟桌電",
+						type:"TC-780_KBL-00H",
+						sku:"2094697",
+						origin_price:23900,
+						price:19900
+					},{
+						logo:"ASUS",
+						image:"./images/items/",
+						title:"雙核文書桌電",
+						type:"K20CE-0051-A306U",
+						sku:"2095904",
+						origin_price:9490,
+						price:8490
+					},{
+						logo:"acer",
+						image:"./images/items/",
+						title:"i3 2G獨顯桌電",
+						type:"TC-780_KBL-00D",
+						sku:"2094556",
+						origin_price:15900,
+						price:13490
+					},{
+						logo:"BENQ",
+						image:"./images/items/",
+						title:"VA低藍光液晶螢幕",
+						type:"GW2270HM",
+						sku:"2096433",
+						origin_price:3488,
+						price:3088
+					},{
+						logo:"acer",
+						image:"./images/items/",
+						title:"護眼電競螢幕",
+						type:"KG241Q",
+						sku:"2093841",
+						origin_price:5280,
+						price:3680
+					},{
+						logo:"ASUS",
+						image:"./images/items/",
+						title:"大尺吋曲面護眼螢幕",
+						type:"VA327H",
+						sku:"2097655",
+						origin_price:8990,
+						price:7888
+					},{
+						logo:"acer",
+						image:"./images/items/",
+						title:"Iconia TalkS 四核可通話平板",
+						type:"A1-734",
+						sku:"2091343",
+						origin_price:6990,
+						price:3990
+					},{
+						logo:"ASUS",
+						image:"./images/items/",
+						title:"ASUS ZenPad 3s 10",
+						type:"Z500M-1H034A",
+						sku:"2090141",
+						origin_price:12900,
+						price:9900
+					},{
+						logo:"SANSUNG",
+						image:"./images/items/",
+						title:"Galaxy Tab E可通話平板",
+						type:"T3777",
+						sku:"2088342",
+						origin_price:8990,
+						price:4990
+					},{
+						logo:"acer",
+						image:"./images/items/",
+						title:"Iconia One 8四核平板",
+						type:"B1-850",
+						sku:"2088781",
+						origin_price:4690,
+						price:3490
+					}
+				],
+				page3:[
+					{
+						logo:"acer",
+						image:"./images/items/",
+						title:"Iconia One 8四核平板",
+						type:"B1-850",
+						sku:"2088781",
+						origin_price:4690,
+						price:3490
+					}
+				]
+			}
+		}
+	})
+	</script>
+</body>
+</html>
