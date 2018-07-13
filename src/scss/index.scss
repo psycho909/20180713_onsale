@@ -56,6 +56,9 @@ header{
 			flex-basis: (100% / 4);
 			display: flex;
 			flex-wrap: wrap;
+			&.height{
+				height: 320px;
+			}
 			.item{
 				display: flex;
 				flex-wrap: wrap;
@@ -63,7 +66,9 @@ header{
 				align-items: center;
 				padding: .5rem 0rem 0 .5rem;
 				height: 100%;
+				width: 100%;
 				.item-box{
+					width: 100%;
 					background-color: #fff;
 					display: flex;
 					flex-wrap: wrap;
@@ -243,7 +248,7 @@ footer{
 		.box-items {
 			.item-wrap{
 				flex-basis: (100% / 2);
-				height: 282px;
+				height: 320px;
 				// &:nth-of-type(odd){
 				// 	margin-right: .5rem;
 				// }
@@ -276,5 +281,28 @@ footer{
 	}
 	.pagnation-wrap .pagnation-box .pagnation-link{
 		padding: 1.25rem 1.5rem;
+	}
+}
+@media screen and (max-width:375px){
+	header{
+		height: 148px;
+	}
+	.container .box-items .item-wrap{
+		flex-basis: 100%;
+		.item{
+			padding: 1rem 1rem 0 1rem !important;
+		}
+	}
+	.pagnation-wrap .pagnation-box .pagnation-link{
+		display: none;
+		&:first-child{
+			display: block;
+		}
+		&:last-child{
+			display: block;
+		}
+	}
+	.container .box-items .item-wrap .item .item-body .price-box .price{
+		font-size: 1.35rem;
 	}
 }
