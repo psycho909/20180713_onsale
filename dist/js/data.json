@@ -262,17 +262,17 @@
         {
             "logo": "transcend",
             "title": "U1 MicroSD記憶卡",
-            "sku": 2079641,
+            "sku": "2079641-16",
             "type": "HTL7140B",
             "sub_item": [{
                     "title": "16GB",
-                    "sku": 2079641,
+                    "sku": "2079641-16",
                     "origin_price": 249,
                     "price": 199
                 },
                 {
                     "title": "32GB",
-                    "sku": 2096232,
+                    "sku": "2096232-16",
                     "origin_price": 439,
                     "price": 329
                 }
@@ -281,18 +281,18 @@
         {
             "logo": "transcend",
             "title": "U1 MicroSD記憶卡",
-            "sku": 2079641,
+            "sku": "2096231-64",
             "type": "HTL7140B",
             "sub_item": [
                 {
                     "title": "64GB",
-                    "sku": 2096231,
+                    "sku": "2096231-64",
                     "origin_price": 839,
                     "price": 629
                 },
                 {
                     "title": "128GB",
-                    "sku": 2096230,
+                    "sku": "2096230-64",
                     "origin_price": 1699,
                     "price": 1249
                 }

@@ -57,8 +57,10 @@
 	</div>
 	<script>
 	var strTemp='<div class="item-wrap"><div class="item"><div class="item-box"><img src="{{images}}" alt=""><div class="item-body"><div class="title">{{title}}</div>{{type}}{{origin_price}}{{price}}{{sub-items}}</div></div></div></div>';
-	var subTemp="<div class='sub-items'><div class='sub-item'><div class='title'>{{title}}</div>{{origin_price}}{{price}}</div></div>"
+	var subTemp="<div class='sub-items'>{{sub-item}}</div>"
+	var subsTemp="<div class='sub-item'><div class='title'>{{title}}</div>{{origin_price}}{{price}}</div>"
 	var strHTML="";
+	var subHTML="";
 	$.ajax({
 		url:'./js/data.json',
 		method:'get',
@@ -67,6 +69,7 @@
 			var page_data=data.page3;
 			var str;
 			var sub;
+			var subs;
 			for(var i=0;i<page_data.length;i++){
 				str=strTemp.replace('{{title}}',page_data[i].title)
 							.replace('{{images}}','./images/items/'+page_data[i].sku+'.jpg')
@@ -86,20 +89,24 @@
 					str=str.replace('{{price}}',"")
 				}
 				if(page_data[i].sub_item){
+					subHTML='';
 					for(var j=0;j<page_data[i]["sub_item"].length;j++){
-						sub=subTemp.replace('{{title}}',page_data[i]["sub_item"][j].title)
+						sub=subsTemp.replace('{{title}}',page_data[i]["sub_item"][j].title)
 						if(page_data[i]["sub_item"][j].origin_price){
 							sub=sub.replace('{{origin_price}}',"<div class='origin_price-box'>市價: <span class='origin_price'>"+page_data[i]["sub_item"][j].origin_price+"</span></div>")
 						}else{
 							sub=sub.replace('{{origin_price}}',"")
 						}
 						if(page_data[i]["sub_item"][j].price){
-							sub=sub.replace('{{price}}',"<div class='price-box'>破盤價: <span class='price'>"+page_data[i]["sub_item"][j].origin_price+"</span></div>")
+							sub=sub.replace('{{price}}',"<div class='price-box'>破盤價: <span class='price'>"+page_data[i]["sub_item"][j].price+"</span></div>")
 						}else{
 							sub=sub.replace('{{price}}',"")
 						}
+						subHTML+=sub
 					}
-					str=str.replace('{{sub-items}}',sub)
+					
+					subs=subTemp.replace('{{sub-item}}',subHTML)
+					str=str.replace('{{sub-items}}',subs)
 				}else{
 					str=str.replace('{{sub-items}}',"")
 				}
