@@ -268,7 +268,15 @@
                     "sku": 2096232,
                     "origin_price": 439,
                     "price": 439
-                },
+                }
+            ]
+        },
+        {
+            "logo": "transcend",
+            "title": "U1 MicroSD記憶卡",
+            "sku": 2079641,
+            "type": "HTL7140B",
+            "sub_item": [
                 {
                     "title": "64GB",
                     "sku": 2096231,

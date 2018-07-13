@@ -21,19 +21,21 @@
 			<div class="box-items">
 				<div class="item-wrap" v-for="(item,index) in item_data.page3" :key="item">
 					<div class="item">
-						<img :src=`./images/items/${item.sku}.jpg` alt="">
-						<div class="item-body">
-							<div class="title">{{item.title}}</div>
-							<div class="type" v-if="item.type">{{item.type}}</div>
-							<div class="origin_price-box" v-if="item.origin_price != item.price">市價: <span class="origin_price">{{item.origin_price}}</span></div>
-							<div class="price-box" v-if="item.price">破盤價: <span class="price">{{item.price}}</span></div>
-							<div class="sub-items">
-								<div class="sub-item" v-for="(sub,index) in item.sub_item" :key="index">
-									<div class="title">{{sub.title}}</div>
-									<div class="origin_price-box" v-if="sub.origin_price != sub.price">
-										市價: <span class="origin_price">{{sub.origin_price}}</span>
+						<div class="item-box">
+							<img :src=`./images/items/${item.sku}.jpg` alt="">
+							<div class="item-body">
+								<div class="title">{{item.title}}</div>
+								<div class="type" v-if="item.type">{{item.type}}</div>
+								<div class="origin_price-box" v-if="item.origin_price != item.price">市價: <span class="origin_price">{{item.origin_price}}</span></div>
+								<div class="price-box" v-if="item.price">破盤價: <span class="price">{{item.price}}</span></div>
+								<div class="sub-items">
+									<div class="sub-item" v-for="(sub,index) in item.sub_item" :key="index">
+										<div class="title">{{sub.title}}</div>
+										<div class="origin_price-box" v-if="sub.origin_price != sub.price">
+											市價: <span class="origin_price">{{sub.origin_price}}</span>
+										</div>
+										<div class="price-box" v-if="sub.price">破盤價: <span class="price">{{sub.price}}</span></div>
 									</div>
-									<div class="price-box" v-if="sub.price">破盤價: <span class="price">{{sub.price}}</span></div>
 								</div>
 							</div>
 						</div>
