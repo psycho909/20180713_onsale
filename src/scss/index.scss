@@ -344,4 +344,10 @@ footer{
 	.container .box-items .item-wrap .item .item-body .price-box .price{
 		font-size: 1.35rem;
 	}
+	.pagnation-wrap .pagnation-box .pagnation-link:first-of-type{
+		display: none;
+	}
+	.pagnation-wrap .pagnation-box .pagnation-link:last-of-type{
+		display: none;
+	}
 }
