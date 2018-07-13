@@ -7,12 +7,21 @@
 	margin: 0;
 	box-sizing: border-box;
 }
+html,body{
+	height: 100%;
+}
 body{
 	font-family:'微軟正黑體';
 }
 #app{
 	width: 100%;
 	background-color: #cb034a;
+	
+}
+#app.loading{
+	.container{
+		height: 400px;
+	}
 }
 header{
 	width: 100%;
@@ -33,6 +42,21 @@ header{
 			background-size: 100%;
 			transform: translateY(100%);
 		}
+		.slogan{
+			width: 754px;
+			height: 259px;
+			position: absolute;
+			top: 82px;
+			left: 226px;
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: 100%;
+			background-image: url('../images/slogan.png');
+			transform: scale(0);
+			animation: sloganAnim .6s ease-in-out;
+			animation-delay: .5s;
+			animation-fill-mode: forwards;
+		}
 	}
 	height: 585px;
 	background-image: url('../images/onsale_title.jpg');
@@ -42,6 +66,26 @@ header{
 	img{
 		width: 100%;
 		display: block;
+	}
+}
+@keyframes sloganAnim{
+	0%{
+		transform: scale(0);
+	}
+	42%{
+		transform: scale(1.2);
+	}
+	62%{
+		transform: scale(.8);
+	}
+	72%{
+		transform: scale(1);
+	}
+	82%{
+		transform: scale(1.1);
+	}
+	100%{
+		transform: scale(1);
 	}
 }
 .container{
@@ -77,7 +121,7 @@ header{
 					transition: all .3s;
 					cursor: pointer;
 					&:hover{
-						transform: translateY(-8px);
+						transform: translateY(-4px);
 						box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.24);
 					}
 				}
@@ -196,6 +240,10 @@ footer{
 @media screen and (max-width:1200px){
 	header{
 		height: 366px;
+		background-image: url('../images/onsale_title2.jpg');
+	}
+	header .header-wrap .slogan{
+		display: none;
 	}
 	.container {
 		.box-items {
@@ -283,7 +331,7 @@ footer{
 		padding: 1.25rem 1.5rem;
 	}
 }
-@media screen and (max-width:375px){
+@media screen and (max-width:400px){
 	header{
 		height: 148px;
 	}
@@ -291,15 +339,6 @@ footer{
 		flex-basis: 100%;
 		.item{
 			padding: 1rem 1rem 0 1rem !important;
-		}
-	}
-	.pagnation-wrap .pagnation-box .pagnation-link{
-		display: none;
-		&:first-child{
-			display: block;
-		}
-		&:last-child{
-			display: block;
 		}
 	}
 	.container .box-items .item-wrap .item .item-body .price-box .price{

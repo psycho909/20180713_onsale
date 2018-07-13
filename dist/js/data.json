@@ -2,7 +2,7 @@
     "page1": [
         {
             "logo": "ASUS",
-            "title": "i5 窄邊框輕薄筆電",
+            "title": "i5 窄邊輕薄筆電",
             "type": "S410UA-0071B8250U",
             "sku": "2097544",
             "origin_price": 25900,
@@ -10,7 +10,7 @@
         },
         {
             "logo": "acer",
-            "title": "Swift 5輕薄筆電",
+            "title": "Swift5 輕薄筆電",
             "type": "SF514-51/79JE",
             "sku": "2093210",
             "origin_price": 36900,
@@ -46,7 +46,7 @@
             "type": "X542UN-0131C855",
             "sku": "2096798",
             "origin_price": 32900,
-            "price": 28490
+            "price": 27900
         },
         {
             "logo": "hp",
@@ -78,7 +78,7 @@
             "type": "X541",
             "sku": "2096566",
             "origin_price": 15900,
-            "price": 14490
+            "price": 13900
         },
         {
             "logo": "acer",
@@ -168,7 +168,7 @@
             "type": "VA327H",
             "sku": "2097655",
             "origin_price": 8990,
-            "price": 7888
+            "price": 7988
         },
         {
             "logo": "acer",
@@ -184,7 +184,7 @@
             "type": "Z500M-1H034A",
             "sku": "2090141",
             "origin_price": 12900,
-            "price": 9900
+            "price": 10190
         },
         {
             "logo": "SANSUNG",
@@ -201,6 +201,13 @@
             "sku": 2088781,
             "origin_price": 4690,
             "price": 3490
+        },
+        {
+            "logo": "lemel",
+            "title": "智慧電腦棒至尊版",
+            "sku": 2087840,
+            "origin_price":5490,
+            "price": 2990
         }
     ],
     "page3": [
@@ -261,13 +268,13 @@
                     "title": "16GB",
                     "sku": 2079641,
                     "origin_price": 249,
-                    "price": 249
+                    "price": 199
                 },
                 {
                     "title": "32GB",
                     "sku": 2096232,
                     "origin_price": 439,
-                    "price": 439
+                    "price": 329
                 }
             ]
         },
@@ -281,13 +288,13 @@
                     "title": "64GB",
                     "sku": 2096231,
                     "origin_price": 839,
-                    "price": 839
+                    "price": 629
                 },
                 {
                     "title": "128GB",
                     "sku": 2096230,
                     "origin_price": 1699,
-                    "price": 1699
+                    "price": 1249
                 }
             ]
         },
@@ -300,14 +307,14 @@
                     "sku": 2073919,
                     "type": "TS1TSJ25A3K",
                     "origin_price": 1999,
-                    "price": 1000
+                    "price": 1488
                 },
                 {
                     "title": "2TB",
                     "sku": 2073919,
                     "type": "TS2TSJ25A3K",
                     "origin_price": 3299,
-                    "price": 3299
+                    "price": 2399
                 }
             ]
         },
@@ -315,15 +322,22 @@
             "logo": "toshiba",
             "title": "2.5吋行動硬碟",
             "sku": 2087065,
-            "origin_price": 1990,
-            "price": 1990
+            "sub_item": [{
+                    "title": "1TB",
+                    "price": 1488
+                },
+                {
+                    "title": "2TB",
+                    "price": 2188
+                }
+            ]
         },
         {
             "logo": "adata",
-            "title": "HV620 2.5吋行動電源",
+            "title": "威剛HV620 1TB珍珠硬碟白",
             "sku": 2098346,
-            "origin_price": 16990,
-            "price": 16990
+            "origin_price": 1388,
+            "price": 1388
         },
         {
             "logo": "sp",
@@ -347,7 +361,7 @@
             "type": "A61",
             "sku": 2093696,
             "origin_price": 3690,
-            "price": 3690
+            "price": 2990
         },
         {
             "logo": "golife",

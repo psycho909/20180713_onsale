@@ -10,7 +10,7 @@
 	<script src="./js/vue.min.js"></script>
 </head>
 <body>
-	<div id="app" :class="{loading:loading}">
+	<div id="app" class="loading">
 		<header>
 			<div class="header-wrap">
 				<a href="http://www.elifemall.com.tw/allnewweb/index.php" class="logo" target="_blank"></a>
@@ -20,7 +20,7 @@
 		</header>
 		<div class="container">
 			<div class="box-items">
-				<div class="item-wrap" :class="{height:height}" v-for="(item,index) in item_data.page2" :key="item">
+				<!-- <div class="item-wrap" :class="{height:height}" v-for="(item,index) in item_data.page1" :key="index">
 					<div class="item">
 						<div class="item-box">
 							<img :src=`./images/items/${item.sku}.jpg` alt="">
@@ -41,7 +41,7 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> -->
 			</div>
 		</div>
 		<div class="pagnation-wrap">
@@ -50,37 +50,70 @@
 				<a class="pagnation-link" href="index.html">1</a>
 				<a class="pagnation-link disabled" href="index2.html">2</a>
 				<a class="pagnation-link" href="index3.html">3</a>
-				<a class="pagnation-link" href="index3.html">下一頁</a>
+				<a class="pagnation-link" href="index2.html">下一頁</a>
 			</div>
 		</div>
 		<footer>全國電子股份有限公司 Copyright © elifemall.com.tw All rights reserved.</footer>
 	</div>
 	<script>
-	var vm=new Vue({
-		el:'#app',
-		created(){
-			var vm=this;
+			var strTemp='<div class="item-wrap"><div class="item"><div class="item-box"><img src="{{images}}" alt=""><div class="item-body"><div class="title">{{title}}</div>{{type}}{{origin_price}}{{price}}{{sub-items}}</div></div></div></div>';
+			var subTemp="<div class='sub-items'><div class='sub-item'><div class='title'>{{title}}</div>{{origin_price}}{{price}}</div></div>"
+			var strHTML="";
 			$.ajax({
 				url:'./js/data.json',
 				method:'get',
 				dataType:'json',
 				success:function(data){
-					vm.item_data=data
-					vm.height=false;
-					vm.loading=false;
-					console.log(vm.item_data.page1)
+					var page_data=data.page2;
+					var str;
+					var sub;
+					for(var i=0;i<page_data.length;i++){
+						str=strTemp.replace('{{title}}',page_data[i].title)
+									.replace('{{images}}','./images/items/'+page_data[i].sku+'.jpg')
+						if(page_data[i].type){
+							str=str.replace('{{type}}',"<div class='type'>"+page_data[i].type+"</div>")
+						}else{
+							str=str.replace('{{type}}',"")
+						}
+						if(page_data[i].origin_price > page_data[i].price ){
+							str=str.replace('{{origin_price}}',"<div class='origin_price-box'>市價: <span class='origin_price'>"+page_data[i].origin_price+"</span></div>")
+						}else{
+							str=str.replace('{{origin_price}}',"")
+						}
+						if(page_data[i].price){
+							str=str.replace('{{price}}',"<div class='price-box'>破盤價: <span class='price'>"+page_data[i].price+"</span></div>")
+						}else{
+							str=str.replace('{{price}}',"")
+						}
+						if(page_data[i].sub_item){
+							for(var j=0;j<page_data[i]["sub_item"].length;j++){
+								sub=subTemp.replace('{{title}}',page_data[i]["sub_item"][j].title)
+								if(page_data[i]["sub_item"][j].origin_price){
+									sub=sub.replace('{{origin_price}}',"<div class='origin_price-box'>市價: <span class='origin_price'>"+page_data[i]["sub_item"][j].origin_price+"</span></div>")
+								}else{
+									sub=sub.replace('{{origin_price}}',"")
+								}
+								if(page_data[i]["sub_item"][j].price){
+									sub=sub.replace('{{price}}',"<div class='price-box'>破盤價: <span class='price'>"+page_data[i]["sub_item"][j].origin_price+"</span></div>")
+								}else{
+									sub=sub.replace('{{price}}',"")
+								}
+							}
+							str=str.replace('{{sub-items}}',sub)
+						}else{
+							str=str.replace('{{sub-items}}',"")
+						}
+						strHTML+=str;
+					}
+					$('.box-items').append(strHTML)
+					$('#app').removeClass('loading')
+					// console.log(strHTML)
 				},
 				error:function(err){
 					console.log("error",err)
 				}
 			})
-		},
-		data:{
-			item_data:{},
-			height:true,
-			loading:true
-		}
-	})
-	</script>
+		
+			</script>
 </body>
 </html>
