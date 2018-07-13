@@ -10,10 +10,11 @@
 	<script src="./js/vue.min.js"></script>
 </head>
 <body>
-	<div id="app">
+	<div id="app" :class="{loading:loading}">
 		<header>
 			<div class="header-wrap">
 				<a href="http://www.elifemall.com.tw/allnewweb/index.php" class="logo" target="_blank"></a>
+				<div class="slogan"></div>
 			</div>
 			<!-- <img src="./images/onsale_title.jpg" alt=""> -->
 		</header>
@@ -66,6 +67,7 @@
 				success:function(data){
 					vm.item_data=data
 					vm.height=false;
+					vm.loading=false;
 					console.log(vm.item_data.page1)
 				},
 				error:function(err){
@@ -75,7 +77,8 @@
 		},
 		data:{
 			item_data:{},
-			height:true
+			height:true,
+			loading:true
 		}
 	})
 	</script>
