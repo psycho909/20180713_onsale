@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>破盤價大公開 超便宜數位商品 ∣ 全國電子學長幫你</title>
+	<link rel="stylesheet" href="./css/index.css">
+	<script src="./js/jquery-3.1.1.min.js"></script>
+	<script src="./js/vue.min.js"></script>
+</head>
+<body>
+	<div id="app" :class="{loading:loading}">
+		<header>
+			<div class="header-wrap">
+				<a href="http://www.elifemall.com.tw/allnewweb/index.php" class="logo" target="_blank"></a>
+				<div class="slogan"></div>
+			</div>
+			<!-- <img src="./images/onsale_title.jpg" alt=""> -->
+		</header>
+		<div class="container">
+			<div class="box-items">
+				<div class="item-wrap" :class="{height:height}" v-for="(item,index) in item_data.page1" :key="index">
+					<div class="item">
+						<div class="item-box">
+							<img :src=`./images/items/${item.sku}.jpg` alt="">
+							<div class="item-body">
+								<div class="title">{{item.title}}</div>
+								<div class="type" v-if="item.type">{{item.type}}</div>
+								<div class="origin_price-box" v-if="item.origin_price != item.price">市價: <span class="origin_price">{{item.origin_price}}</span></div>
+								<div class="price-box" v-if="item.price">破盤價: <span class="price">{{item.price}}</span></div>
+								<div class="sub-items" v-if="item.sub_item">
+									<div class="sub-item" v-for="(sub,index) in item.sub_item" :key="index">
+										<div class="title">{{sub.title}}</div>
+										<div class="origin_price-box" v-if="sub.origin_price != sub.price">
+											市價: <span class="origin_price">{{sub.origin_price}}</span>
+										</div>
+										<div class="price-box" v-if="sub.price">破盤價: <span class="price">{{sub.price}}</span></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="pagnation-wrap">
+			<div class="pagnation-box">
+				<a class="pagnation-link disabled" href="javascript:;">上一頁</a>
+				<a class="pagnation-link disabled" href="index.html">1</a>
+				<a class="pagnation-link" href="index2.html">2</a>
+				<a class="pagnation-link" href="index3.html">3</a>
+				<a class="pagnation-link" href="index3.html">下一頁</a>
+			</div>
+		</div>
+		<footer>全國電子股份有限公司 Copyright © elifemall.com.tw All rights reserved.</footer>
+	</div>
+	<script>
+	var vm=new Vue({
+		el:'#app',
+		created(){
+			var vm=this;
+			$.ajax({
+				url:'./js/data.json',
+				method:'get',
+				dataType:'json',
+				success:function(data){
+					vm.item_data=data
+					vm.height=false;
+					vm.loading=false;
+					console.log(vm.item_data.page1)
+				},
+				error:function(err){
+					console.log("error",err)
+				}
+			})
+		},
+		data:{
+			item_data:{},
+			height:true,
+			loading:true
+		}
+	})
+	</script>
+</body>
+</html>

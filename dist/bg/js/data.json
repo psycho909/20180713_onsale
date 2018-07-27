@@ -1,0 +1,432 @@
+{
+    "page1": [
+        {
+            "logo": "ASUS",
+            "title": "i5 窄邊輕薄筆電",
+            "type": "S410UA-0071B8250U",
+            "sku": "2097544",
+            "origin_price": 25900,
+            "price": 22490
+        },
+        {
+            "logo": "acer",
+            "title": "Swift5 輕薄筆電",
+            "type": "SF514-51/79JE",
+            "sku": "2093210",
+            "origin_price": 36900,
+            "price": 28900
+        },
+        {
+            "logo": "ASUS",
+            "title": "狂潮i7電競筆電",
+            "type": "FX503",
+            "sku": "2095903",
+            "origin_price": 39900,
+            "price": 29900
+        },
+        {
+            "logo": "msi",
+            "title": "PL62 i7玩家SSD輕薄筆電",
+            "type": "PL627RC-231TW",
+            "sku": "2095557",
+            "origin_price": 35900,
+            "price": 28900
+        },
+        {
+            "logo": "acer",
+            "title": "Aspire7 i7 GTX電競筆電",
+            "type": "A715-715Z",
+            "sku": "2094644",
+            "origin_price": 31900,
+            "price": 27900
+        },
+        {
+            "logo": "ASUS",
+            "title": "i7 4G獨顯筆電",
+            "type": "X542UN-0131C855",
+            "sku": "2096798",
+            "origin_price": 32900,
+            "price": 27900
+        },
+        {
+            "logo": "hp",
+            "title": "8代i5美型效能2G獨筆電",
+            "type": "15-BS116TX/2WX8",
+            "sku": "2096209",
+            "origin_price": 23900,
+            "price": 21490
+        },
+        {
+            "logo": "acer",
+            "title": "8代i5 2G獨顯混碟筆電",
+            "type": "A515-51G-55T5",
+            "sku": "2096467",
+            "origin_price": 31900,
+            "price": 24490
+        },
+        {
+            "logo": "Lenovo",
+            "title": "320 i5 獨顯混碟筆電",
+            "type": "320/81BG00KBTW",
+            "sku": "2095978",
+            "origin_price": 24990,
+            "price": 21990
+        },
+        {
+            "logo": "ASUS",
+            "title": "獨顯文書筆電",
+            "type": "X541",
+            "sku": "2096566",
+            "origin_price": 15900,
+            "price": 13900
+        },
+        {
+            "logo": "acer",
+            "title": "四核心雙碟版 筆電",
+            "type": "A314-31-C3LV",
+            "sku": "2096385",
+            "origin_price": 16900,
+            "price": 14490
+        },
+        {
+            "logo": "acer",
+            "title": "ONE 10平板筆電",
+            "type": "S1003",
+            "sku": "2089756",
+            "origin_price": 7990,
+            "price": 6490
+        }
+    ],
+    "page2": [
+        {
+            "logo": "ASUS",
+            "title": "i5 電競桌電",
+            "type": "M80CJ-0011A73HG",
+            "sku": "2092704",
+            "origin_price": 28900,
+            "price": 26900
+        },
+        {
+            "logo": "msi",
+            "title": "闇夜之刃電競桌電",
+            "type": "MI38RA-026TW",
+            "sku": "2098057",
+            "origin_price": 33900,
+            "price": 29900
+        },
+        {
+            "logo": "ASUS",
+            "title": "i5 2G獨顯桌機",
+            "type": "K31CD-K-0081A74",
+            "sku": "2097310",
+            "origin_price": 20900,
+            "price": 17900
+        },
+        {
+            "logo": "acer",
+            "title": "i5獨顯混碟桌電",
+            "type": "TC-780_KBL-00H",
+            "sku": "2094697",
+            "origin_price": 23900,
+            "price": 19900
+        },
+        {
+            "logo": "ASUS",
+            "title": "雙核文書桌電",
+            "type": "K20CE-0051-A306U",
+            "sku": "2095904",
+            "origin_price": 9490,
+            "price": 8490
+        },
+        {
+            "logo": "acer",
+            "title": "i3 2G獨顯桌電",
+            "type": "TC-780_KBL-00D",
+            "sku": "2094556",
+            "origin_price": 15900,
+            "price": 13490
+        },
+        {
+            "logo": "BENQ",
+            "title": "VA低藍光液晶螢幕",
+            "type": "GW2270HM",
+            "sku": "2096433",
+            "origin_price": 3488,
+            "price": 3088
+        },
+        {
+            "logo": "acer",
+            "title": "護眼電競螢幕",
+            "type": "KG241Q",
+            "sku": "2093841",
+            "origin_price": 5280,
+            "price": 3680
+        },
+        {
+            "logo": "ASUS",
+            "title": "大尺吋曲面護眼螢幕",
+            "type": "VA327H",
+            "sku": "2097655",
+            "origin_price": 8990,
+            "price": 7988
+        },
+        {
+            "logo": "acer",
+            "title": "Iconia TalkS 四核可通話平板",
+            "type": "A1-734",
+            "sku": "2091343",
+            "origin_price": 6990,
+            "price": 3990
+        },
+        {
+            "logo": "ASUS",
+            "title": "ASUS ZenPad 3s 10",
+            "type": "Z500M-1H034A",
+            "sku": "2090141",
+            "origin_price": 12900,
+            "price": 10190
+        },
+        {
+            "logo": "SANSUNG",
+            "title": "Galaxy Tab E可通話平板",
+            "type": "T3777",
+            "sku": "2088342",
+            "origin_price": 8990,
+            "price": 4990
+        },
+        {
+            "logo": "acer",
+            "title": "Iconia One 8四核平板",
+            "type": "B1-850",
+            "sku": 2088781,
+            "origin_price": 4690,
+            "price": 3490
+        },
+        {
+            "logo": "lemel",
+            "title": "智慧電腦棒至尊版",
+            "sku": 2087840,
+            "origin_price":5490,
+            "price": 2990
+        }
+    ],
+    "page3": [
+        {
+            "logo": "switch",
+            "title": "Switch瑪莉歐雙響炮豪華版藍紅",
+            "type": "",
+            "sku": 2096155,
+            "origin_price": 13360,
+            "price": 12490
+        },
+        {
+            "logo": "d-link",
+            "title": "無線路由器",
+            "type": "DIR825",
+            "sku": 2091195,
+            "origin_price": 1999,
+            "price": 1399
+        },
+        {
+            "logo": "ASUS",
+            "title": "RT-AC1200雙頻路由器",
+            "type": "RT-AC1200",
+            "sku": 2087335,
+            "origin_price": 1790,
+            "price": 1399
+        },
+        {
+            "logo": "best",
+            "title": "R318錄音筆",
+            "type": "R-318",
+            "sku": 2092273,
+            "origin_price": 1590,
+            "price": 999
+        },
+        {
+            "logo": "sony",
+            "title": "2.1聲道環繞Sound Bar",
+            "type": "HTCT800",
+            "sku": 2094011,
+            "origin_price": 17900,
+            "price": 14900
+        },
+        {
+            "logo": "philips",
+            "title": "家庭劇院喇叭",
+            "type": "HTL7140B",
+            "sku": 2096651,
+            "origin_price": 13900,
+            "price": 9900
+        },
+        {
+            "logo": "transcend",
+            "title": "U1 MicroSD記憶卡",
+            "sku": 2079641,
+            "type": "HTL7140B",
+            "sub_item": [{
+                    "title": "16GB",
+                    "sku": 2079641,
+                    "origin_price": 249,
+                    "price": 199
+                },
+                {
+                    "title": "32GB",
+                    "sku": 2096232,
+                    "origin_price": 439,
+                    "price": 329
+                }
+            ]
+        },
+        {
+            "logo": "transcend",
+            "title": "U1 MicroSD記憶卡",
+            "sku": 2079641,
+            "type": "HTL7140B",
+            "sub_item": [
+                {
+                    "title": "64GB",
+                    "sku": 2096231,
+                    "origin_price": 839,
+                    "price": 629
+                },
+                {
+                    "title": "128GB",
+                    "sku": 2096230,
+                    "origin_price": 1699,
+                    "price": 1249
+                }
+            ]
+        },
+        {
+            "logo": "transcend",
+            "title": "2.5吋行動硬碟",
+            "sku": 2073919,
+            "sub_item": [{
+                    "title": "1TB",
+                    "sku": 2073919,
+                    "type": "TS1TSJ25A3K",
+                    "origin_price": 1999,
+                    "price": 1488
+                },
+                {
+                    "title": "2TB",
+                    "sku": 2073919,
+                    "type": "TS2TSJ25A3K",
+                    "origin_price": 3299,
+                    "price": 2399
+                }
+            ]
+        },
+        {
+            "logo": "toshiba",
+            "title": "2.5吋行動硬碟",
+            "sku": 2087065,
+            "sub_item": [{
+                    "title": "1TB",
+                    "price": 1488
+                },
+                {
+                    "title": "2TB",
+                    "price": 2188
+                }
+            ]
+        },
+        {
+            "logo": "adata",
+            "title": "威剛HV620 1TB珍珠硬碟白",
+            "sku": 2098346,
+            "origin_price": 1388,
+            "price": 1388
+        },
+        {
+            "logo": "sp",
+            "title": "硬碟USB3.1 Gen1",
+            "type": "1TBPHDD3SS3K",
+            "sku": 2098025,
+            "origin_price": 1588,
+            "price": 1488
+        },
+        {
+            "logo": "CAPER",
+            "title": "S2機車行車紀錄器",
+            "type": "ST2000VN004",
+            "sku": 2096256,
+            "origin_price": 2490,
+            "price": 1990
+        },
+        {
+            "logo": "PX",
+            "title": "A61行車紀錄器",
+            "type": "A61",
+            "sku": 2093696,
+            "origin_price": 3690,
+            "price": 2990
+        },
+        {
+            "logo": "golife",
+            "title": "X-Pro GPS運動錶",
+            "type": "GOWATCHPRO-BK/SL",
+            "sku": 2087414,
+            "origin_price": 2490,
+            "price": 1990
+        },
+        {
+            "logo": "apple",
+            "title": "iPhone X",
+            "color": "銀、太空灰",
+            "sku": "iphone",
+            "sub_item": [{
+                    "title": "64GB",
+                    "sku": "2095491-492",
+                    "origin_price": 35900,
+                    "price": 33900
+                },
+                {
+                    "title": "256GB",
+                    "sku": "2095489-490",
+                    "origin_price": 41500,
+                    "price": 39500
+                }
+            ]
+        },
+        {
+            "logo": "apple",
+            "title": "iPhone 8",
+            "color": "金、銀、太空灰、紅",
+            "sku": "iphone",
+            "sub_item": [{
+                    "title": "64GB",
+                    "sku": "2095072-071",
+                    "origin_price": 25500,
+                    "price": 23500
+                },
+                {
+                    "title": "256GB",
+                    "sku": "2095069-098",
+                    "origin_price": 30900,
+                    "price": 28900
+                }
+            ]
+        },
+        {
+            "logo": "apple",
+            "title": "iPhone 8 Plus",
+            "color": "金、銀、太空灰、紅",
+            "sku": "iphone",
+            "sub_item": [{
+                    "title": "64GB",
+                    "sku": "2095064-066",
+                    "origin_price": 28900,
+                    "price": 26900
+                },
+                {
+                    "title": "256GB",
+                    "sku": "2095061-063",
+                    "origin_price": 34500,
+                    "price": 32500
+                }
+            ]
+        }
+    ]
+}
