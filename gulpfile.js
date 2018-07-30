@@ -45,7 +45,14 @@ gulp.task('sass',function(){
 	})
 	.on('error',sass.logError))
 	.pipe(autoprefixer({
-		browsers:['last 2 versions','> 5%','not ie <= 8']
+		browsers:[
+			"> 1%",
+			"last 5 versions",
+			"Firefox >= 45",
+			"ios >= 8",
+			"Safari >= 8",
+			"ie >= 8"
+		]
 	}))
 	.pipe(gulp.dest('./dist/css'))
 	.pipe(browserSync.reload({
